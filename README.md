@@ -1,2 +1,3 @@
 # TestingDBConnection
 HomeWork 32.6
+Созданы тесты с моком объекта, имитирующим подключение к базе данных. DBConnection реализован с использованием интерфейсов (DBConnection.h). Написана группа тестов, покрывающая все методы из класса ClassThatUseDb (Tests.cpp). Тесты используют мок-класс MockDBConnection, чтобы проверить взаимодействие между ClassThatUseDb и DBConnection. Для интерфейса DBConnection создан мок-класс MockDBConnection (MockDBConnection.h). В классе ClassThatUseDb используется интерфейс DBConnection, и его можно подменить на мок-объект, что позволяет проводить юнит-тестирование без реального подключения к базе данных (ClassThatUseDb.cpp и Tests.cpp).
